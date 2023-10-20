@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 1</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="div1">
+        <ul> <!-- lista nieuporzadkowana -->
+            <li class="glowna"><a href="#">link</a>
+                <ul class="zagn">
+                    <li><a href="#">link 2</a></li> <!--zagniezdzenie listy-->
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 2</a></li>
+                </ul>
+            </li> <!-- li*3 -->
+            <li class="glowna"><a href="#">link2</a></li>
+            <li class="glowna"><a href="#">link3</a></li>
+
+        </ul>
+    </div>
+    <div class="div2">
+ 
+        <h1>Title1</h1> <!--naglowki od h1 do h6-->
+        <h2>Title1</h2>
+        <h3>Title1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolores suscipit molestias, modi saepe labore, unde sunt dolore similique officiis quia odio maiores quas soluta magni rerum! Illo voluptatum modi laboriosam reiciendis sapiente consequatur itaque magni, neque cumque necessitatibus eum amet soluta! Dolorem qui enim saepe, accusamus quas labore error ullam totam, quae necessitatibus, soluta minus! Mollitia, architecto earum. Et veniam aliquam cum deserunt? Fuga delectus incidunt totam modi ipsam illum veritatis suscipit dolorem. Accusantium illo exercitationem necessitatibus atque voluptatem, ab deleniti dolore id officia perspiciatis reprehenderit maxime esse est praesentium itaque? Nemo modi nihil a sequi, esse rerum cumque.</p><!--lorem i ilosc znakow-->
+
+        <img src="grafika/grafika.jpg" alt="Zdjecie grafiki" id="zdjecie-borsuka"><!--tylko sciezka wzgledna-->
+
+        <h2>subtitle</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, accusantium!</p>
+        <h3>subtitle</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, ipsa.</p>
+
+        <form method="POST" action="z1.html"><!--GET alternatywa niezalecana-->
+            <fieldset>
+                <div class="kolumny">    
+                    <div class="kolumna1"> <!--tworzy kontener-->
+                        <div class="form-group">
+                            <label for="imie">Imie</label>
+                            <input type="text" name="imie" id="imie">
+                        
+                            <label for="opis">opis</label>
+                            <textarea name="opis" id="opis">wpisz cos</textarea>
+                        </div>    
+                    </div>
+                    <div class="kolumna2">
+                        <div class="form-group"> 
+                            
+                            <label for="wiek">Wiek</label>
+                            <select name="wiek" id="wiek">
+                                <option>0-18</option>
+                                <option>18-56</option>
+                                <option>65</option>
+                            </select>
+                        
+                            
+                            <div class="form-group">
+                                <label for="opcja">Opcja</label>
+                                <div class="checkbox-group">
+                                    <input type="radio" name="opcja" id="opcja1">Opcja1
+                                    <input type="radio" name="opcja" id="opcja2">Opcja2
+                                    <input type="radio" name="opcja" id="opcja3">Opcja3
+                                </div>
+                            </div>    
+
+                        </div>        
+                    </div>
+                </div>    
+            <input type="submit" name="wyslij" id="wyslij" value="Wyślij"> <!--submit zatwierdz-->
+            <input type="reset" name="anuluj" id="anuluj" value="Wyczyść">
+        </fieldset>
+        </form>
+ 
+        <table border> <!-- border pokazuje tabele ale juz niezalecane--> <!--colspan rowspan-->
+            <tr>
+                <th>1</td> <!--td*3-->
+                <th>2</td>
+                <th>3</td>
+            </tr><input type="submit" name="wyslij" id="wyslij" value="Wyślij">
+            <tr>
+                <td>4</td>
+                <td colspan="2">5</td>
+                
+            </tr>
+            <tr>
+                <th>1</td> <!--td*3-->
+                <th>2</td>
+                <th>3</td>
+            </tr>
+            <tr>
+                <th>1</td> <!--td*3-->
+                <th>2</td>
+                <th>3</td>
+            </tr>
+        </table>
+        <a href="http://wp.pl" target="_blank">WP</a> 
+    </div>
+    <div class="div3">
+        <footer>
+            <p>sample tekst</p>
+            <p>sample text</p>
+
+        </footer>
+    </div>
+</body>
+</html>

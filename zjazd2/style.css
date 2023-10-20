@@ -1,0 +1,155 @@
+body{
+  background-image: url("grafika/tlo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}  
+
+  .div1 {
+    float: left;
+    display: block;
+    background: rgb(48, 85, 172,0.5); /* 0.5 półprzezroczystość */
+    visibility: 50%;
+    width: 25%; /* szerokość na 25% */
+    height:  75vh;
+  
+  }
+
+/* Stylizacja listy głównej */
+.div1 .glowna {
+  display: block;
+  background: rgb(14, 28, 177);
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  margin: 0px;
+  border: 1px solid rgb(0, 0, 0);
+  text-decoration: none; /* Usunięcie domyślnego podkreślenia dla linków */
+  text-align: center; /* Wyśrodkowanie tekstu wewnątrz komórki */
+}
+
+.div1 .glowna a {
+  display: block; /* Ustaw link jako blokowy element */
+  color: inherit; /* Dziedzicz kolor tekstu od rodzica (komórki) */
+  text-decoration: none;
+}
+
+/* Domyślny styl elementów głównej listy */
+.div1 .glowna {
+  display: block;
+  background: rgb(14, 28, 177);
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  margin: 0px;
+  border: 1px solid rgb(0, 0, 0);
+  transition: opacity 0.3s; /* Dodaj efekt przejścia zmiany przezroczystości */
+}
+
+/* Styl elementów głównej listy po najechaniu myszką */
+.div1 .glowna:hover {
+  opacity: 0.8; /* Zmiana przezroczystości po najechaniu myszką */
+}
+
+/* Stylizacja listy zagnieżdżonej */
+.div1 .zagn {
+  padding: 0;
+  list-style-type: none;
+}
+
+.div1 .zagn li {
+  display: block;
+  background: rgb(61, 71, 179);
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  margin: 0px;
+  border: 1px solid rgb(0, 0, 0);
+  transition: opacity 0.3s; /* Dodaj efekt przejścia zmiany przezroczystości */
+}
+
+/* Styl elementów zagnieżdżonej listy po najechaniu myszką */
+.div1 .zagn li:hover {
+  opacity: 0.8; /* Zmiana przezroczystości po najechaniu myszką */
+}
+
+  .div2 {
+    float: left;
+    display: block;
+    background: rgb(14, 28, 177);
+     width: 75%;
+     height: 75vh;
+     overflow-y: scroll;
+     display: grid;
+  }
+  .kolumny{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dwie kolumny o równej szerokości */
+    grid-auto-flow: column;
+    grid-column-gap: 20px; /* Odstęp między kolumnami */
+    padding: 20px; /* Dodaj odstęp wewnątrz formularza */ 
+  }
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 0px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+
+  .kolumna2 {
+    display: flex;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.checkbox-group {
+    margin-top: 5px;
+}
+
+/* .checkbox-group input {
+    display: block;
+
+} */
+
+
+  #zdjecie-borsuka {
+    max-width: 35%;
+    height: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #a995d1; /* Kolor dla parzystych wierszy */
+}
+
+tr:nth-child(odd) {
+    background-color: #8c8cc0; /* Kolor dla nieparzystych wierszy */
+}
+
+  .div3 {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 35%;
+    background: rgb(58, 0, 128);
+    text-align: center; /*wyśrodkowanie */
+  }
